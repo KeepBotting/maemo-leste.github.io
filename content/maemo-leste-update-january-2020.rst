@@ -64,7 +64,7 @@ Porting applications from Maemo Fremantle ("Maemo 5") is usually not very hard,
 and sometimes particularly simple, as outlined in this `talk.maemo.org forum
 post <https://talk.maemo.org/showpost.php?p=1563848&postcount=18>`_.
 In general, if an application depends on libraries that are mostly available in
-Debian, and uses gtk, it should be not very hard to port. If it relies on Qt, it
+Debian, and uses gtk, it should not be very hard to port. If it relies on Qt, it
 is not yet possible to properly port it, as we do not have a usable Qt5 Hildon
 port yet.
 
@@ -83,7 +83,7 @@ python applications. Since a few weeks, `pygtk
 support, `python-hildon <https://github.com/maemo-leste/python-hildon>`_,
 `python-hildondesktop <https://github.com/maemo-leste/python-hildondesktop>`_ and
 `python-osso <https://github.com/maemo-leste/python-osso>`_ are all available.
-There are the main bindings to the Maemo mobile environment.  They have all been
+These are the main bindings to the Maemo mobile environment.  They have all been
 ported to Python 2.7. Python 2.7 is now end of life, so we'll have to migrate to
 3.x eventually, but 2.7 seemed like a good and useful intermediate goal.
 
@@ -148,7 +148,7 @@ osso-pdf-viewer source can be found here <https://github.com/maemo-leste/osso-pd
 Porting was slightly more involved that we hoped, but all in all it was maybe
 half a day of work. Porting did review that there is a bug in the underlying
 maemo file manager libraries, making it impossible for users to select a file to
-open if the enviroment variable `MYDOCSDIR` is set, see `#280 <https://github.com/maemo-leste/bugtracker/issues/280>`_.
+open if the environment variable `MYDOCSDIR` is set, see `#280 <https://github.com/maemo-leste/bugtracker/issues/280>`_.
 This bug also effects the SNES emulator drnoksnes, so we'll hopefully get it
 resolved soon.
 
@@ -182,7 +182,7 @@ users to discovery and install packages, uninstall packages, and it also
 notifies the users when updates are available (it won't check for updates on
 metered connections), and if the user agrees, updates the system.
 
-This was a relatively quick port, and there are like bugs, and there is probably
+This was a relatively quick port, and there are like(?) bugs, and there is probably
 more work to be done, nevertheless, it works.
 
 This screenshot shows the device informing the user there are (important)
@@ -243,7 +243,7 @@ Maemo Leste doesn't work very well yet in Portait mode (although the original
 Maemo Fremantle does mostly work really well in Portrait mode), but there were
 some real show stopping bugs, in particular `#214
 <https://github.com/maemo-leste/bugtracker/issues/214>`_, which resulted in the
-entire desktop been drawn offscreen. Some bugs still remain, like `#283
+entire desktop being drawn offscreen. Some bugs still remain, like `#283
 <https://github.com/maemo-leste/bugtracker/issues/283>`_ and these affect the
 Pinephone in a negative way.
 
